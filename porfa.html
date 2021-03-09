@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+	</script>
+	<title>tercer punto</title>
+	<link rel="stylesheet" type="text/css" href="tin.css">
+</head>
+<body onmousemove="f1(event)" background="morrr.jpg" style="background-size: cover;">
+
+	<div class="uno" id="a1" ><center></center></div>
+
+
+<script type="text/javascript">
+	
+
+a=document.getElementById('a1');
+function f1(event)
+{
+var x=event.clientX;
+var y=event.clientY;
+console.log(x);
+console.log(y);
+
+if (x>550&&x<754&&y>100&&y<304) {
+			a.className="si1";
+			a.innerHTML="Ta dentro";
+
+	}
+	else
+	{
+		a.className="si";
+		a.innerHTML="Ta fuera";
+	}
+}
+
+</script>
+</body>
+</html>
